@@ -4,7 +4,7 @@ on:
   push:
 
 jobs:
-  Deploy documentation:
+  deploy:
     runs-on: ubuntu-latest
 
     steps:
