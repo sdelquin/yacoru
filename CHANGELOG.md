@@ -6,6 +6,8 @@ Releases use [Semantic Versioning](https://semver.org/) (`<major>.<minor>.<patch
 
 Released at DD-MM-YYYY
 
+- Move pdoc dependency to docs dependencies group.
+
 ## Version 0.1.1
 
 Released at 23-11-2026

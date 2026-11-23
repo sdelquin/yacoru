@@ -296,17 +296,17 @@ wheels = [
 name = "yacoru"
 version = "0.1.1"
 source = { editable = "." }
-dependencies = [
-    { name = "pdoc" },
-]
 
 [package.dev-dependencies]
 dev = [
     { name = "ipython" },
 ]
+docs = [
+    { name = "pdoc" },
+]
 
 [package.metadata]
-requires-dist = [{ name = "pdoc", specifier = ">=16.0.0" }]
 
 [package.metadata.requires-dev]
 dev = [{ name = "ipython", specifier = ">=9.18.1" }]
+docs = [{ name = "pdoc", specifier = ">=16.0.0" }]
