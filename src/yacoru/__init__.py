@@ -1,3 +1,3 @@
-from .cmd import Command  # noqa
+from .cmd import Command
 
-all = ['Command']
+__all__ = ['Command']

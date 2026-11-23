@@ -31,3 +31,15 @@ sh:
 # Bump version: component = [major, minor, patch]
 bump component:
     uv version --bump {{component}}
+
+# Open docs in dev mode
+docs:
+    rm -rf docs/
+    uv run pdoc --docformat=restructuredtext --no-include-undocumented --no-show-source src/*
+
+build-docs:
+    rm -rf docs/
+    uv run pdoc --docformat=restructuredtext --no-include-undocumented --no-show-source -o docs/ src/*
+
+deploy-docs:
+    rsync -avz --delete docs/ matraka.es:~/code/yacoru-docs

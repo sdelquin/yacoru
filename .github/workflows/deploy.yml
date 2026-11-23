@@ -1,0 +1,34 @@
+name: Documentation
+
+on:
+  push:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Fetch code
+        uses: actions/checkout@v4
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@v10.3.0
+
+      - name: Install just
+        uses: extractions/setup-just@v4
+
+      - name: Sync dependencies
+        run: uv sync --locked
+
+      - name: Build documentation
+        run: just build-docs
+
+      - name: Deploy documentation
+        uses: burnett01/rsync-deployments@v9
+        with:
+          switches: -avz --delete
+          path: docs/
+          remote_path: ~/code/yacoru-docs
+          remote_host: matraka.es
+          remote_user: ${{ secrets.REMOTE_USER }}
+          remote_key: ${{ secrets.REMOTE_PRIVATE_KEY }}

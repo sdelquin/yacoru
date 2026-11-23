@@ -7,7 +7,9 @@ authors = [
     { name = "Sergio Delgado Quintero", email = "sdelquin@gmail.com" }
 ]
 requires-python = ">=3.15"
-dependencies = []
+dependencies = [
+    "pdoc>=16.0.0",
+]
 
 [project.scripts]
 yacoru = "yacoru:main"
