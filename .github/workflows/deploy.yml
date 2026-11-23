@@ -4,7 +4,7 @@ on:
   push:
 
 jobs:
-  test:
+  Deploy documentation:
     runs-on: ubuntu-latest
 
     steps:
@@ -23,7 +23,7 @@ jobs:
       - name: Build documentation
         run: just build-docs
 
-      - name: Deploy documentation
+      - name: Sync documentation
         uses: burnett01/rsync-deployments@v9
         with:
           switches: -avz --delete
