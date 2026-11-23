@@ -6,6 +6,8 @@ Releases use [Semantic Versioning](https://semver.org/) (`<major>.<minor>.<patch
 
 Released at DD-MM-YYYY
 
+- Add links at PyPI for main resources.
+
 ## Version 0.1.0
 
 Released at 22-11-2026

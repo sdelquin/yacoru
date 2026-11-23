@@ -85,4 +85,8 @@ True
 
 ## API
 
-Find the full API documentation [here](https://yacoru.matraka.es)
+Find the full API documentation [here](https://yacoru.matraka.es).
+
+## Changelog
+
+Check out the Changelog [here](https://github.com/sdelquin/yacoru/blob/main/CHANGELOG.md).

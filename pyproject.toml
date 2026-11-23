@@ -1,7 +1,7 @@
 [project]
 name = "yacoru"
 version = "0.1.0"
-description = "Add your description here"
+description = "Yet Another Command Runner"
 readme = "README.md"
 authors = [
     { name = "Sergio Delgado Quintero", email = "sdelquin@gmail.com" }
@@ -11,8 +11,11 @@ dependencies = [
     "pdoc>=16.0.0",
 ]
 
-[project.scripts]
-yacoru = "yacoru:main"
+[project.urls]
+Repository = "https://github.com/sdelquin/yacoru"
+Documentation = "https://yacoru.matraka.es"
+Issues = "https://github.com/sdelquin/yacoru/issues"
+Changelog = "https://github.com/sdelquin/yacoru/blob/main/CHANGELOG.md"
 
 [build-system]
 requires = ["uv_build>=0.13.8,<0.14.0"]
