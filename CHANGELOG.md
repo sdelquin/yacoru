@@ -6,6 +6,12 @@ Releases use [Semantic Versioning](https://semver.org/) (`<major>.<minor>.<patch
 
 Released at DD-MM-YYYY
 
+## Version 0.1.3
+
+Released at 23-11-2026
+
+- Fix group dependencies.
+
 ## Version 0.1.2
 
 Released at 23-11-2026
